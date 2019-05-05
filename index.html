@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML To React</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="modal-header">
+        <h1 class="logo">
+            <img src="/images/logo.png" alt="html-to-react" class="logo-icon" />HTML to React
+        </h1>
+    </div>
+    <div class="modal-content py-3">
+        <div class="container">
+            <div class="row" id="error">
+                <div class="col" id="error-text">
+
+                </div>
+            </div>
+            <div class="row  py-3">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="component-title">Component Name: </label>
+                        <input type="text" id="component-title" name="component-title" class="form-control">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="component-type">Component Type: </label>
+                        <select name="component-type" id="component-type" class="form-control">
+                                    <option value="select">Select</option>
+                                    <option value="class">Class</option>
+                                    <option value="functional">Functional</option>
+                                </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="html-content">HTML Content: </label>
+                        <textarea name="html-content" id="html-content" cols="70" rows="10" class="form-control"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="btn btn-success" id="create-component">Create</div>
+                    <div class="btn btn-primary" id="reset">Reset</div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5" id="output-block">
+            <div class="row">
+                <div class="col">
+                    <label for="output">React Output: </label>
+                    <br />
+                    <code id="output"></code>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
