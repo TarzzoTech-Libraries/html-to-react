@@ -183,7 +183,7 @@ function classComponentBuilder(htmlContent, name) {
             super(props);
         }
         render() {
-            return ("<>${extractedHTML}</>");
+            return (<>${extractedHTML}</>);
         }
     }`;
 }
@@ -192,7 +192,7 @@ function functionComponentBuilder(htmlContent, name) {
     const functionName = name || "ReactComponent";
     const extractedHTML = extractReactHTML(htmlContent);
     return `export const ${functionName} = (props) => {
-        return "<>${extractedHTML}</>");
+        return (<>${extractedHTML}</>);
     }`;
 }
 
