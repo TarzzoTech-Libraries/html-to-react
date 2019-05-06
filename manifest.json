@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "HTML To React",
     "description": "To create a React component with an input details.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
         "128": "icon_128.png"
     },
